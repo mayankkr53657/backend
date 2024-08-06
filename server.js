@@ -12,7 +12,7 @@ app.use("/api/portfolio", portfolioRoute);
 app.use(
   cors({
     origin: "https://dynamic-portfolio-application-with-mern-stack.vercel.app/",
-    methods: ["PORT", "PATH"],
+    methods: ["LISTEN"],
     credentials: true,
   })
 )
