@@ -17,6 +17,7 @@ app.use(
 )
 const port = process.env.PORT || 5000;
 const path = require("path");
+mongoose.connect('mongodb+srv://mayankkr53657:mayankkr53657@cluster0.awrksda.mongodb.net/');
 
 // if(process.env.NODE_ENV === "production")
 // {
