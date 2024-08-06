@@ -1,4 +1,5 @@
 const express = require("express");
+const mongoose = require('mongoose')
 const app = express();
 require("dotenv").config();
 const dbConfig = require("./config/dbConfig");
@@ -11,7 +12,7 @@ app.use("/api/portfolio", portfolioRoute);
 app.use(
   cors({
     origin: "*",
-    credentials:true,
+    credentials: true,
   })
 )
 const port = process.env.PORT || 5000;
